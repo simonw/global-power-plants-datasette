@@ -1,0 +1,15 @@
+language: python
+python:
+- "3.6"
+branches:
+  only:
+    - master
+before_script:
+- pip install csvs-to-sqlite
+- npm install -g now
+- curl -L -o global-power-plants.csv https://raw.githubusercontent.com/wri/global-power-plant-database/master/output_database/global_power_plant_database.csv
+- csvs-to-sqlite global-power-plants.csv global-power-plants.db
+- git clone https://github.com/simonw/datasette.git
+- cd datasette && python setup.py bdist_wheel && cd ..
+script: now --token=$NOW_TOKEN
+after_script: now alias --token=$NOW_TOKEN
