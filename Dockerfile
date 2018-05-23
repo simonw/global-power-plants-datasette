@@ -3,6 +3,7 @@ RUN apt-get update
 RUN apt-get install -y python3-dev gcc git
 ADD datasette/dist/*.whl .
 RUN pip install *.whl
+RUN pip install datasette-cluster-map
 ADD global-power-plants.db .
 ADD metadata.json .
 RUN datasette inspect global-power-plants.db --inspect-file inspect-data.json
