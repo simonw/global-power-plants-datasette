@@ -1,4 +1,5 @@
 {
     "name": "global-power-plants-datasette",
-    "alias": "global-power-plants.datasettes.com"
+    "alias": "global-power-plants.datasettes.com",
+    "version": 1
 }
