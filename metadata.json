@@ -4,6 +4,8 @@
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
     "source": "World Resources Institute",
     "source_url": "http://www.wri.org/publication/global-power-plant-database",
+    "about": "global-power-plants-datasette",
+    "about_url": "https://github.com/simonw/global-power-plants-datasette",
     "databases": {
         "global-power-plants": {
             "tables": {
