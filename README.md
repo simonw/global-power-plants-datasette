@@ -4,4 +4,4 @@
 
 Global power plants from https://github.com/wri/global-power-plant-database
 
-Updates are deployed daily to https://global-power-plants.datasettes.com/ using GitHub Actions.
+Updates are to https://global-power-plants.datasettes.com/ using GitHub Actions when [the underlying data changes](https://github.com/wri/global-power-plant-database/commits/master/output_database/global_power_plant_database.csv).
