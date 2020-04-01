@@ -33,7 +33,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Build global-power-plants.db database
-      run: csvs-to-sqlite global-power-plant-database/output_database/global_power_plant_database.csv global-power-plants.db -i country_long -i fuel1 -i owner -f name
+      run: csvs-to-sqlite global-power-plant-database/output_database/global_power_plant_database.csv global-power-plants.db -i country_long -i fuel1 -i owner -f name --table global-power-plants
     - name: Set variables to decide if we should deploy
       id: decide_variables
       run: |-
