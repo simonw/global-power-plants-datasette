@@ -1,4 +1,4 @@
 datasette
 csvs-to-sqlite
-datasette-cluster-map
+datasette-cluster-map>=0.13
 datasette-graphql
