@@ -54,6 +54,7 @@ jobs:
         datasette publish cloudrun global-power-plants.db \
           --service global-power-plants \
           -m metadata.json \
+          --branch=main \
           --install=datasette-cluster-map \
           --install=datasette-graphql \
           --extra-options="--config facet_time_limit_ms:1000"
