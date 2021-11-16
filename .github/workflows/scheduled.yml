@@ -55,6 +55,6 @@ jobs:
           --service global-power-plants \
           -m metadata.json \
           --branch=main \
-          --install=datasette-cluster-map==0.17a0 \
+          --install=datasette-cluster-map \
           --install=datasette-graphql \
-          --extra-options="--config facet_time_limit_ms:1000"
+          --extra-options="--setting facet_time_limit_ms 1000 --setting trace_debug 1"
