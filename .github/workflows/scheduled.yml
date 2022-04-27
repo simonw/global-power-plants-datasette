@@ -58,5 +58,4 @@ jobs:
           --install datasette-cluster-map \
           --install datasette-graphql \
           --install datasette-pretty-traces \
-          --install datasette-total-page-time \
           --extra-options "--setting facet_time_limit_ms 1000 --setting trace_debug 1"
